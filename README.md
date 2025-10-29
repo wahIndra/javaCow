@@ -14,7 +14,30 @@ A Java library that processes variables and operations 5 times slower than norma
 
 ## Installation
 
-### Option 1: Include JavaCow in your Maven project
+### Option 1: Direct from GitHub using JitPack (Easiest - No compilation needed!)
+
+Users can include JavaCow directly from GitHub without any compilation:
+
+Add this to your `pom.xml`:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.wahIndra</groupId>
+        <artifactId>javaCow</artifactId>
+        <version>master-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+```
+
+### Option 2: Include JavaCow in your Maven project (if published to Maven Central)
 
 Add the JavaCow library to your Maven project:
 
@@ -26,7 +49,7 @@ Add the JavaCow library to your Maven project:
 </dependency>
 ```
 
-### Option 2: Clone and build from source
+### Option 3: Clone and build from source
 
 ```bash
 git clone https://github.com/wahIndra/javaCow.git
@@ -44,11 +67,13 @@ Then include in your project:
 </dependency>
 ```
 
-### Option 3: Download JAR directly
+### Option 4: Download JAR directly
 
 Download the JAR file from the [releases page](https://github.com/wahIndra/javaCow/releases) and add it to your classpath.
 
 ## Quick Start
+
+**TL;DR**: Add JitPack repository + dependency to your `pom.xml`, then call `CowUtils.releaseCow("CowName")` to unleash chaos! 🐄
 
 ```java
 import com.javacow.core.Cow;
@@ -76,7 +101,26 @@ Want to slow down an existing Java project? Just add JavaCow and release the cha
 
 ### Step 1: Add JavaCow to your existing project
 
-Add the dependency to your `pom.xml`:
+**Easiest way** - Add JitPack repository and dependency to your `pom.xml`:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.wahIndra</groupId>
+        <artifactId>javaCow</artifactId>
+        <version>master-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+```
+
+**Alternative** - If published to Maven Central:
 
 ```xml
 <dependency>
