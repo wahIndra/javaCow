@@ -30,10 +30,10 @@ Add this to your `pom.xml`:
 
 <dependencies>
     <dependency>
-        <groupId>com.github.wahIndra</groupId>
-        <artifactId>javaCow</artifactId>
-        <version>master-SNAPSHOT</version>
-    </dependency>
+		<groupId>com.github.wahIndra</groupId>
+		<artifactId>javaCow</artifactId>
+		<version>v1.0.0</version>
+	</dependency>
 </dependencies>
 ```
 
